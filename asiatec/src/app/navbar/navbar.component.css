@@ -1,0 +1,22 @@
+.navbar{
+    background-color: white;
+    height: 100PX;
+}
+.img{
+    height : 200px;
+    width :230px;
+    margin-top: 100px;
+    margin-left: 10px;
+   
+}
+.example-spacer {
+    flex: 1 1 auto;
+    
+  }
+  .navstyle{
+  text-size-adjust:inherit;
+  color:black;
+  margin-top: 100px;
+  
+      
+  }
