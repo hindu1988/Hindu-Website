@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -13,7 +14,12 @@ import { VisionComponent } from './vision/vision.component';
 import { ProjectreferenceComponent } from './projectreference/projectreference.component';
 import { CommunityComponent } from './community/community.component';
 import { ContactComponent } from './contact/contact.component';
+import { NavbarComponent } from './navbar/navbar.component';
+import {MatToolbarModule} from '@angular/material/toolbar';
+import {MatIconModule} from '@angular/material/icon';
+import {MatMenuModule} from '@angular/material/menu';
 
+import {MatButtonModule} from '@angular/material/button';
 @NgModule({
   declarations: [
     AppComponent,
@@ -26,11 +32,19 @@ import { ContactComponent } from './contact/contact.component';
     VisionComponent,
     ProjectreferenceComponent,
     CommunityComponent,
-    ContactComponent
+    ContactComponent,
+    NavbarComponent
+  
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    BrowserAnimationsModule,
+    AppRoutingModule,
+    MatToolbarModule,
+    MatIconModule,
+    MatMenuModule,
+    MatButtonModule
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
