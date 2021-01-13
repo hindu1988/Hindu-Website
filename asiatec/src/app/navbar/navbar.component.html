@@ -1,0 +1,29 @@
+<mat-toolbar class="navbar">
+
+    <span><img class="img" src="/assets/images/logo.jpg" alt=""></span>
+
+
+    <span class="example-spacer"></span>
+    <div class='navstyle'>
+        <button mat-button [routerLink]="['/home']"> Home</button>
+        <button mat-button [routerLink]="['/aboutus']">AboutUs</button>
+        <button mat-button [matMenuTriggerFor]="menu">Our Competency</button>
+
+        <mat-menu #menu>
+            <button mat-menu-item [routerLink]="['/competency']">Our Services</button>
+            <button mat-menu-item [routerLink]="['/facilities']">Our Facilities</button>
+            <button mat-menu-item [routerLink]="['/projectreference']">Project Reference</button>
+        </mat-menu>
+        <button mat-button [matMenuTriggerFor]="menu1">Our Vision</button>
+
+        <mat-menu #menu1>
+            <button mat-menu-item [routerLink]="['/vision']">Our Future</button>
+            <button mat-menu-item [routerLink]="['/facilities']">Our Facilities</button>
+            <button mat-menu-Item [routerLink]="['/community']">Community</button>
+        </mat-menu>
+
+
+        <button mat-button [routerLink]="['/contact']">Contact</button>
+    </div>
+
+</mat-toolbar>
